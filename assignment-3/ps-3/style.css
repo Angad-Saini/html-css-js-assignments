@@ -1,0 +1,28 @@
+.main {
+    position: relative;
+    height: 100vh;
+}
+
+.info {
+    position: absolute;
+    background-color: rgb(202, 0, 0);
+    color: black;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    visibility: hidden;
+}
+
+.btn {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.main:active .info {
+    visibility: visible;
+}

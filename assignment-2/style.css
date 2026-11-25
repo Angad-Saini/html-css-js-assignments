@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 4%;
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.lang-select {
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: 
+        linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0) 40%, rgba(0,0,0,0.8)),
+        url(https://assets.nflxext.com/ffe/siteui/vlv3/d8132cba-0024-4b01-86f4-2bac9792e1dd/web/IN-en-20261102-TRIFECTA-perspective_971d7f82-9e80-48cc-aedc-f7bc0e68c14f_large.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.heroMain {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px 60px;
+}
+
+.heroMain h1 { 
+    font-size: 3.5rem;
+    font-weight: 900;
+    max-width: 650px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.cta-text {
+    font-size: 1rem;
+    max-width: 550px;
+    margin-bottom: 20px;
+}
+
+.inputField {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.emailInput {
+    width: 400px;
+    height: 56px;
+    padding: 0 16px;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.695);
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.getStartedBtn {
+    height: 56px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.trending {
+    background-color: black;
+    color: white;
+    padding-top: 70px;
+    padding-left: 50px;
+}
+
+.cards {
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+}
+
+.number {
+    position: absolute;
+    z-index: 2;
+    left: 8px;
+    bottom: 0;
+    line-height: 1;
+    color: black;
+    -webkit-text-stroke: 3px white;
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.card img {
+    position: relative;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.reasons {
+    background-color: black;
+    color: white;
+    padding: 70px 7%;
+}
+
+.reasons h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.rcards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.rcard {
+    position: relative;
+    height: 320px;
+    padding: 32px 24px;
+    border-radius: 16px;
+    background: linear-gradient(150deg, #1a2150 0%, #1a1030 50%, #2a0f18 100%);
+
+}
+
+.rcard h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.rcard p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #d0d0d0;
+}
+
+.signup {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 7% 20px;
+}
+
+.signup .cta-text {
+    max-width: none;
+    margin-bottom: 20px;
+}
+
+.getStartedBtn {
+    gap: 14px;
+}
+
+.footer {
+    background-color: black;
+    color: #b3b3b3;
+    padding: 70px 7% 60px;
+    border-top: 1px solid #232323;
+}
+
+.footer-top {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.footer-top a {
+    color: #b3b3b3;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px 24px;
+    margin-bottom: 30px;
+}
+
+.footer-links a {
+    color: #b3b3b3;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-lang {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 20px;
+    color: #b3b3b3;
+    border: 1px solid #737373;
+}
+
+.footer-country {
+    font-size: 0.9rem;
+}

@@ -1,0 +1,22 @@
+img {
+    width: 150px;
+    transition: 2s;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jerry {
+    margin-left: 800px;
+}
+
+body:hover .tom {
+    transform: translateX(800px);
+}
+
+body:hover .jerry {
+    transform: translateX(-800px);
+}
