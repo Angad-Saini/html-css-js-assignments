@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSpark 2026 - College Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="home">
+        <h1>TechSpark 2026</h1>
+        <p>Annual Inter-College Technical &amp; Cultural Festival • 12 – 14 December 2026</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="layout">
+        <main>
+
+            <section>
+                <h2>Welcome to TechSpark 2026</h2>
+                <img class="hero" src="https://picsum.photos/id/1067/900/400" alt="Students gathered at the college auditorium">
+                <p>Join hundreds of students from colleges across the country for three days of coding, robotics, design and
+                cultural celebration. Listen to our welcome message from the Principal:</p>
+
+                <audio controls>
+                    <source src="assets/audio.mp3" type="audio/mpeg">
+                    Your browser does not support audio.
+                </audio>
+
+                <h3>Promotional Video</h3>
+                <video controls width="640">
+                    <source src="assets/video.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+            </section>
+
+            <section id="events">
+                <h2>Event Information</h2>
+
+                <h3>Event Name</h3>
+                <p><b>TechSpark 2026</b> — Inter-College Technical &amp; Cultural Festival</p>
+
+                <h3>Event Description</h3>
+                <p>TechSpark is a platform for students to showcase their talent through hackathons, paper presentations,
+                robotics challenges, quizzes, and cultural performances. Winners receive cash prizes, certificates
+                and internship opportunities from our industry partners.</p>
+
+                <h3>Event Schedule</h3>
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Activity</th>
+                    </tr>
+                    <tr><td>12 Dec 2026</td><td>09:00 AM</td><td>Inauguration &amp; Keynote</td></tr>
+                    <tr><td>12 Dec 2026</td><td>11:00 AM</td><td>24-Hour Hackathon begins</td></tr>
+                    <tr><td>13 Dec 2026</td><td>10:00 AM</td><td>Robo Wars &amp; Paper Presentation</td></tr>
+                    <tr><td>13 Dec 2026</td><td>04:00 PM</td><td>Tech Quiz</td></tr>
+                    <tr><td>14 Dec 2026</td><td>10:00 AM</td><td>Cultural Fest &amp; Dance Battle</td></tr>
+                    <tr><td>14 Dec 2026</td><td>05:00 PM</td><td>Prize Distribution &amp; Closing Ceremony</td></tr>
+                </table>
+
+                <h3>Venue Details</h3>
+                <p>
+                    <b>Main Auditorium, Delhi Technological University</b><br>
+                    Shahbad Daulatpur, Main Bawana Road<br>
+                    New Delhi – 110042, India
+                </p>
+                <p>Nearest Metro: Rohini West • Free parking available on campus.</p>
+
+                <iframe
+                    title="Event location map"
+                    src="https://maps.google.com/maps?q=Delhi%20Technological%20University&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                    width="100%" height="320">
+                </iframe>
+            </section>
+
+            <section id="gallery">
+                <h2>Gallery</h2>
+                <div class="gallery">
+                    <figure>
+                        <img src="https://picsum.photos/id/1011/300/200" alt="Teams coding">
+                        <figcaption>Hackathon 2025</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://picsum.photos/id/1025/300/200" alt="Robot">
+                        <figcaption>Robo Wars</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://picsum.photos/id/1062/300/200" alt="Cultural dance">
+                        <figcaption>Cultural Night</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://picsum.photos/id/1074/300/200" alt="Prize distribution">
+                        <figcaption>Prize Ceremony</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section id="register">
+                <h2>Registration Form</h2>
+                <p><small>Fields marked <span class="req">*</span> are required.</small></p>
+
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Personal Details</legend>
+
+                        <div class="field">
+                            <label for="fullname">Full Name <span class="req">*</span></label>
+                            <input type="text" id="fullname" name="fullname" required minlength="3" maxlength="50"
+                                pattern="[A-Za-z ]{3,50}" placeholder="e.g. Rahul Sharma">
+                        </div>
+
+                        <div class="field">
+                            <label for="email">Email <span class="req">*</span></label>
+                            <input type="email" id="email" name="email" required maxlength="80" placeholder="you@college.edu">
+                        </div>
+
+                        <div class="field">
+                            <label for="phone">Phone Number <span class="req">*</span></label>
+                            <input type="tel" id="phone" name="phone" required pattern="[6-9][0-9]{9}"
+                                minlength="10" maxlength="10" placeholder="10-digit mobile number">
+                        </div>
+
+                        <div class="field">
+                            <label for="dob">Date of Birth <span class="req">*</span></label>
+                            <input type="date" id="dob" name="dob" required min="1995-01-01" max="2008-12-31">
+                        </div>
+
+                        <div class="field">
+                            <b>Gender <span class="req">*</span></b>
+                            <div class="inline">
+                                <label><input type="radio" name="gender" value="male" required> Male</label>
+                                <label><input type="radio" name="gender" value="female"> Female</label>
+                                <label><input type="radio" name="gender" value="other"> Other</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>College Details</legend>
+
+                        <div class="field">
+                            <label for="college">College Name <span class="req">*</span></label>
+                            <input type="text" id="college" name="college" required minlength="5" maxlength="100"
+                                placeholder="e.g. Delhi Technological University">
+                        </div>
+
+                        <div class="field">
+                            <label for="department">Department <span class="req">*</span></label>
+                            <input type="text" id="department" name="department" required minlength="2" maxlength="60"
+                                pattern="[A-Za-z &.\-]{2,60}" placeholder="e.g. Computer Science">
+                        </div>
+
+                        <div class="field">
+                            <label for="studentid">Upload Student ID <span class="req">*</span></label>
+                            <input type="file" id="studentid" name="studentid" required accept=".jpg,.jpeg,.png,.pdf">
+                            <small>Accepted: JPG, PNG or PDF.</small>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Event Preferences</legend>
+
+                        <div class="field">
+                            <label for="event">Event Selection <span class="req">*</span></label>
+                            <select id="event" name="event" required>
+                                <option value="">-- Select an event --</option>
+                                <option value="hackathon">24-Hour Hackathon</option>
+                                <option value="robowars">Robo Wars</option>
+                                <option value="paper">Paper Presentation</option>
+                                <option value="quiz">Tech Quiz</option>
+                                <option value="dance">Dance Battle</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <b>Interests</b>
+                            <div class="inline">
+                                <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+                                <label><input type="checkbox" name="interests" value="robotics"> Robotics</label>
+                                <label><input type="checkbox" name="interests" value="design"> Design</label>
+                                <label><input type="checkbox" name="interests" value="music"> Music</label>
+                                <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="comments">Comments</label>
+                            <textarea id="comments" name="comments" rows="4" minlength="10" maxlength="300"
+                                placeholder="Anything you'd like us to know (10-300 characters)"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit">Register Now</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </section>
+        </main>
+
+        <aside>
+            <h2>Quick Info</h2>
+            <ul>
+                <li><b>Dates:</b> 12–14 Dec 2026</li>
+                <li><b>Last date to register:</b> 5 Dec 2026</li>
+                <li><b>Fee:</b> ₹300 per participant</li>
+                <li><b>Prize pool:</b> ₹2,00,000</li>
+            </ul>
+
+            <h3>Important</h3>
+            <p>Carry your college ID card on all three days.</p>
+        </aside>
+    </div>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:techspark@college.edu">techspark@college.edu</a></p>
+        <p>Phone: <a href="tel:+911123456789">+91 11 2345 6789</a></p>
+        <p>© 2026 TechSpark Organizing Committee. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

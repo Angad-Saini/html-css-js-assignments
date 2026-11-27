@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: grey;
+}
+
+h2 {
+    color: grey;
+    margin-top: 25px;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}
+
+#studentList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.student-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 220px;
+    border: 1px solid rgb(175, 171, 171);
+}
+
+.student-card button {
+    background-color: red;
+}
+
+.student-card button:hover {
+    background-color: red;
+}
+
+#loading {
+    color: grey;
+}
+
+#error {
+    color: red;
+}

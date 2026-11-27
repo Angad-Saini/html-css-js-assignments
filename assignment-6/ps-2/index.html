@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Student Management System</h1>
+
+    <h2>Add Student</h2>
+
+    <form id="studentForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="course" placeholder="Course" required>
+        <input type="number" id="age" placeholder="Age" min="1" required>
+
+        <button type="submit">Add Student</button>
+    </form>
+
+    <h2>Search Students</h2>
+
+    <input type="text" id="searchInput" placeholder="Search by name or course">
+
+    <h2>Student Records</h2>
+
+    <p id="totalStudents">Total Students: 0</p>
+
+    <p id="loading">Loading students...</p>
+    <p id="error"></p>
+
+    <div id="studentList"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
